@@ -1,0 +1,670 @@
+/* start of the general style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(231, 231, 231) !important;
+}
+.container, .navbar{
+    width: 80% !important;
+    margin: auto !important;
+}
+.blue{
+    color: rgb(5, 92, 178) !important;
+}
+.green{
+    color: rgb(0, 151, 0);
+}
+.red{
+    color: red;
+}
+a{
+    color: black !important;
+    text-decoration: none !important;
+}
+a:hover{
+    color: red !important;
+    transition: 0.5s;
+}
+.button{
+    padding: 6px 15px !important;
+    background-color: rgb(5, 92, 178);
+    color: white !important;
+    border-radius: 18px;
+}
+/* end of the general style */
+
+/* start of the header style */
+nav{
+    background-color: white;
+    border-radius: 30px;
+    height: 80px;
+}
+.scrolled {
+    background-color: rgba(5, 0, 148, 0.804) !important;
+    height: 70px;
+    transition: 200ms linear;
+}
+.scrolled a{
+  color: white !important;
+}
+.scrolled a:hover{
+    color: red !important;
+    transition: 0.5s;
+}
+.header h1,h4,h5{
+    display: inline !important;
+}
+.header h1{
+    font-size: 70px;
+}
+.header h4{
+    font-size: 30px;
+}
+.header h5{
+    font-size: 25px;
+}
+.note{
+    opacity: 0.6;
+    font-size: 12px;
+}
+#back {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    cursor: pointer;
+    padding: 15px; 
+    border-radius: 50%; 
+    font-size: 18px; 
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+#back:hover {
+  background-color: rgb(165, 38, 38);
+  box-shadow: 3px 3px 3px 3px rgb(0, 0, 255);
+  transition: 1s;
+}
+.show{
+  background-color: rgba(5, 0, 148, 0.804) !important;
+  border-radius: 8px !important;
+}
+.show a{
+  color: white !important;
+}
+.show .button{
+    width: 180px;
+    margin: 0 !important;
+}
+.show a:hover{
+  color: red !important;
+  transition: 0.5s;
+}
+/* end of the header style */
+
+/* start of the 1st section style */
+table, th, td{
+    border: 1px solid rgb(217, 217, 217);
+    border-collapse: collapse;
+    padding: 15px;
+    border-bottom-width: 1px !important;
+    background-color: rgba(255, 255, 255, 0.837);
+}
+/* end of the 1st section style */
+
+/* start of the 2nd section style */
+.spread .content{
+    width: 300px;
+    background-color: white;
+    margin: 20px 15px !important;
+    border-radius: 3px;
+}
+.spread .content .details{
+    padding: 15px !important;
+}
+.spread .row{
+    padding: 0 !important;
+}
+.spread img{
+    border-bottom: 5px solid rgb(5, 92, 178);
+}
+/* end of the 2nd section style */
+
+/* start of the 3rd section style */
+#symptoms p{
+    display: block;
+}
+#symptoms .warning {
+    text-align: right;
+}
+#symptoms .warning i{
+    font-size: 50px;
+}
+#symptoms .symptom {
+    background-color: white;
+    width: 300px;
+    margin: 80px 15px !important;
+    border-radius: 3px;
+}
+#symptoms .symptom .fever::after{
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../imgs/symptom-a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 130px;
+    box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+}
+#symptoms .symptom .cough::after{
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../imgs/symptom-b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 130px;
+    box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+
+}
+#symptoms .symptom .breath::after{
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../imgs/symptom-c.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 10px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+
+}
+/* end of the 3rd section style */
+
+/* start of the 4th section style */
+.protect .row img{
+    border-radius: 50%;
+    width: 150px !important;
+    height: 120px !important;
+    margin: 20px 70px;
+}
+/* end of the 4th section style */
+
+/* start of the 5th section style */
+#steps-protect{
+    background-color: white;
+    border-radius: 10px;
+}
+#steps-protect img{
+    width: 100%;
+}
+#steps-protect p{
+    display: block;
+}
+#steps-protect #check{
+    display: inline !important;
+}
+#steps-protect #check p{
+    transform: translate(30px, -24px);
+}
+#steps-protect #check .link{
+    color: blue !important;
+}
+#steps-protect #check .link:hover{
+    color: red !important;
+    transition: 1s;
+}
+#steps-protect #check::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url(../../imgs/check.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 10px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+}
+/* end of the 5th section style */
+
+/* start of the 6th section style */
+.container .steps img{
+    border-radius: 50%;
+    width: 150px !important;
+    height: 120px !important;
+    margin-bottom: 25px;
+}
+.container .steps h5{
+    font-weight: bold;
+}
+/* end of the 6th section style */
+
+/* start of the 7th section style */
+#treatment{
+    width: 100% !important;
+    background-color: rgb(30, 98, 255);
+    background-image: url(../../imgs/shape-a.png);
+    background-size: cover;
+    color: white;
+}
+#treatment .self_med{
+    background-color: blue;
+    border-radius: 6px;
+    margin-bottom: 150px !important;
+}
+#treatment .self_med span i{
+    margin-right: 7px;
+}
+/* end of the 7th section style */
+
+/* start of the 8th section style */
+#dos .dont img,p , .do img,p{
+    display: inline;
+}
+#dos .dont div , .do div{
+    margin-bottom: 20px;
+}
+#dos .dont img, .do img{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+}
+#dos .dont img{
+    border: 2px solid red;
+}
+#dos .do img{
+    border: 2px solid green;
+}
+#dos .dont p::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../imgs/cross.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+    transform: translate(45px, -30px);
+}
+#dos .do p::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../imgs/Check_green_circle.svg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+    transform: translate(-45px, -30px);
+}
+/* end of the 8th section style */
+
+/* start of the 9th section style */
+.accordion-button::after{
+    background-image: none !important;
+    content: "+" !important;
+    font-size: 25px;
+    font-weight: 700;
+    transform: rotate(180deg);
+    transition: 1s !important;
+}
+.accordion-button:not(.collapsed)::after{
+    content: "-" !important;
+    font-size: 25px;
+    font-weight: 700;
+    transform: rotate(180deg);
+    transform: translate(5px, -5px) !important;
+    transition: 1s;
+}
+#FAQ p{
+    display: block !important;
+}
+/* end of the 9th section style */
+
+/* start of the 10th section style */
+#recent .row .blog{
+    background-color: white;
+    border-radius: 5px;
+    width: 310px;
+    margin: 30px 15px;
+}
+#recent .row .blog:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+#recent .row img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#recent .row p{
+    display: block;
+}
+/* end of the 10th section style */
+
+/* start of the footer section style */
+.footer{
+    width: 100% !important;
+    background-color: rgb(0, 5, 39);
+    background-image: url(../../imgs/shape-a.png);
+}
+.footer footer{
+    width: 80%;
+    margin: auto;
+}
+.footer footer .logo{
+    display: inline;
+}
+.footer footer .logo:hover{
+    color: red;
+    transition: 0.5s;
+}
+.footer footer h5, .footer footer a{
+    color: white !important;
+    display: block;
+    margin: 15px 0;
+}
+.footer footer p{
+    color: rgb(204, 204, 204) !important;
+    display: block;
+}
+.footer footer hr{
+    color: rgb(204, 204, 204);
+}
+.footer footer .p-privacy{
+    color: rgb(204, 204, 204) !important;
+    display: inline !important;
+}
+.footer footer .privacy{
+    width: 45%;
+    display: inline-block !important;
+    text-align: right;
+    float: right;
+}
+.footer footer .privacy a{
+    display: inline !important;
+}
+
+/* end of the footer section style */
+
+/* start of the first media query less than 1340px  */
+@media only screen and (max-width: 1340px)  {
+    .header .corona{
+        transform: translate(10px,10px);
+    }
+    .header .corona h1{
+        font-size: 60px;
+    }
+}
+/* end of the first media query less than 1340px  */
+
+/* start of the second media query less than 1285px  */
+@media only screen and (max-width: 1285px)  {
+    #dos .dont p, #dos .do p{
+        display: block !important;
+    }
+    #dos .dont p::after{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../imgs/cross.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+        transform: translate(0, 30px);
+    }
+    #dos .do p::before{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../imgs/Check_green_circle.svg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+        transform: translate(35px, -80px);
+    }
+}
+/* end of the second media query less than 1285px  */
+
+/* start of the third media query less than 1190px  */
+@media only screen and (max-width: 1190px)  {
+    .container{
+        width: 100% !important;
+        margin: 50px !important;
+    }
+    .header .corona{
+        transform: translate(10px,22px);
+    }
+    .header .corona h1{
+        font-size: 50px;
+    }
+    .header .text h5, .header .text h4{
+        font-size: 20px;
+        transform: translate(10px,22px);
+    }
+    .header .row img{
+        width: 400px;
+    }
+    #symptoms .buttons{
+        width: 310px;
+    }
+    #steps .steps div{
+        width: 300px;
+    }
+    #steps .steps div h5{
+        display: block !important;
+    }
+    #dos .dont p::after{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../imgs/cross.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+        transform: translate(-70px, 30px);
+    }
+    #dos .do p::before{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../imgs/Check_green_circle.svg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+        transform: translate(70px, -80px);
+    }
+}
+/* end of the third media query less than 1190px  */
+
+/* start of the fourth media query less than 1040px  */
+@media only screen and (max-width: 1040px)  {
+    #dos .dont p::after{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../imgs/cross.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+        transform: translate(-25px, 30px);
+    }
+}
+/* end of the fourth media query less than 1040px  */
+
+/* start of the fifth media query less than 995px  */
+@media only screen and (max-width: 995px)  {
+    .container{
+        width: 100% !important;
+        margin: 50px !important;
+    }
+    .header .corona{
+        transform: translate(10px,32px);
+        display: block;
+        width: 340px;
+    }
+    .header .corona h1{
+        font-size: 40px;
+    }
+    .header .text h5, .header .text h4{
+        font-size: 20px;
+        transform: translate(10px,22px);
+    }
+    .header .buttons{
+        display: block;
+    }
+    .header .buttons a{
+        display: block;
+        width: 170px;
+        margin-bottom: 20px;
+    }
+    .header .counts .row div{
+        display: block;
+        width: 360px;
+    }
+    .header img{
+        margin-top: 100px;
+    }
+    #how-protect .protect .col-3{
+        width: 330px !important;
+    }
+    #steps .steps div{
+        width: 200px;
+    }
+    #steps .steps div h5{
+        display: block !important;
+    }
+    #dos .dont p::after{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../imgs/cross.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+        transform: translate(-90px, 30px);
+    }
+    #dos .do p::before{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../imgs/Check_green_circle.svg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+        transform: translate(40px, -80px);
+    }
+    #dos .dont p, #dos .do p{
+        display: block !important;
+        width: 200px;
+    }
+    #recent .row{
+        transform: translate(90px, 10px);
+    }
+}
+/* end of the fifth media query less than 995px  */
+
+/* start of the sixth media query less than 885px  */
+@media only screen and (max-width: 885px)  {
+    #how-protect .protect .col-3{
+        width: 280px !important;
+    }
+    #treatment .container {
+        margin: 50px !important;
+    }
+    #treatment .container .row {
+        width: 600px !important;
+    }
+}
+/* end of the sixth media query less than 885px  */
+
+/* start of the seventh media query less than 750px  */
+@media only screen and (max-width: 750px)  {
+    #dos .dont p::after{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../imgs/cross.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+        transform: translate(-20px, 30px);
+    }
+    #dos .do p::before{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../imgs/Check_green_circle.svg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 21, 255, 0.2), 0 6px 20px 0 rgba(7, 0, 103, 0.19);
+        transform: translate(20px, -80px);
+    }
+    #dos .dont p, #dos .do p{
+        display: block !important;
+        width: 100px;
+    }
+    #recent .row{
+        transform: translate(0, 10px);
+    }
+}
+/* end of the seventh media query less than 750px  */
+
+/* start of the eighth media query less than 700px  */
+@media only screen and (max-width: 700px)  {
+    #treatment .container {
+        margin: 40px !important;
+    }
+    #treatment .container .row {
+        width: 400px !important;
+    }
+    #treatment .container .row .col-5,  #treatment .container .row .col-6{
+        width: 100% !important;
+        margin: 30px 0 !important;
+    }
+    .footer .but{
+        width: 130px !important;
+    }
+}
+/* end of the eighth media query less than 700px  */
+
+/* start of the ninth media query less than 590px  */
+@media only screen and (max-width: 590px)  {
+    .footer .links{
+        width: 130px !important;
+    }
+}
+/* end of the ninth media query less than 590px  */
